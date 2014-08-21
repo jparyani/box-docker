@@ -11,6 +11,7 @@ keywords:
   - docker
 script: |
   sudo apt-get update -qq
+  sudo apt-get install -y curl
   curl -sSL https://get.docker.io/ | sudo sh
   sudo groupadd docker
   sudo usermod -a -G docker $USER
