@@ -1,5 +1,5 @@
 name: docker
-version: 1.0.0
+version: 1.0.1
 description: Ubuntu 14.04 with latest docker
 inherits: jparyani/ubuntu14.04@1.0.1
 type: main
