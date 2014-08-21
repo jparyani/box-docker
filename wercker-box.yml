@@ -14,3 +14,5 @@ script: |
   curl -sSL https://get.docker.io/ | sudo sh
   sudo groupadd docker
   sudo usermod -a -G docker $USER
+env:
+  DOCKER_VERSION: "1.1.2"
