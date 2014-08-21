@@ -1,0 +1,16 @@
+name: docker
+version: 1.0.0
+description: Ubuntu 14.04 with latest docker
+inherits: jparyani/ubuntu14.04@1.0.1
+type: main
+platform: ubuntu@12.04
+keywords:
+  - ubuntu
+  - 14.04
+  - trusty
+  - docker
+script: |
+  sudo apt-get update -qq
+  curl -sSL https://get.docker.io/ | sudo sh
+  sudo groupadd docker
+  sudo usermod -a -G docker $USER
